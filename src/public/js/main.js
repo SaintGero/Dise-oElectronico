@@ -42,7 +42,10 @@ function Actualizar(data){
     fecha.innerHTML = data[0].fecha.replace("T00:00:00.000Z","")
     hora.innerHTML = data[0].hora
 }
-
+mobiscroll.datepicker('#calendar', {
+    controls: ['calendar'],
+    display: 'inline'
+});
 
 //Actualizar la posición en el mapa
 
